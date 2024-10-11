@@ -1,0 +1,15 @@
+.navbar {
+  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.nav-link {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
