@@ -58,6 +58,11 @@ body {
   text-decoration: underline;
 } */
 
+.banner {
+  height: 653px;
+  margin-bottom: 150px;
+}
+
 #background-video {
   width: 100%;
   height: 100%;
@@ -154,4 +159,70 @@ color: #bcd6ff;
   71% {margin-top:0px;}
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
+}
+
+.about {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  height: 600px;
+  margin-bottom: 150px;
+}
+.about img {
+  width: 500px;
+  height: auto;
+  margin: 0 50px 0 10px;
+  filter: drop-shadow(0px 0px 4px #050505);
+}
+.aboutText {
+  margin-right: 50px;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 50px;
+}
+
+.bio1 div {
+  display: flex;
+}
+
+.bio2 div {
+  display: flex;
+}
+
+.bio b {
+  margin: 0 5px;
+}
+
+.service {
+  background-color: #e3e3e3;
+  height: 300px;
+  display:grid;
+  align-items: center;
+}
+
+.serviceTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceCard {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceCard .card {
+  margin: 0 50px
+  
+}
+
+.card img {
+  width: 100px;
+  height: auto;
 }
