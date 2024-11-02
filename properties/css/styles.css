@@ -1,5 +1,6 @@
 body {
   height: 5000px;
+  
 }
 
 .navbar {
@@ -60,7 +61,6 @@ body {
 
 .banner {
   height: 653px;
-  margin-bottom: 150px;
 }
 
 #background-video {
@@ -81,13 +81,14 @@ body {
   /* background-color: rgba(255, 255, 255, 0.266); */
   width: 85%;
   height: 550px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   border-radius: 20px 20px 10px 10px;
   display: flex;
   align-items: center;
 }
 
 .homeItems {
+  margin-top: 50px;
   width: 100%;
   height: 500px;
   display: flex;
@@ -167,7 +168,7 @@ color: #bcd6ff;
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   height: 600px;
-  margin-bottom: 150px;
+  margin-top: 150px;
 }
 .about img {
   width: 500px;
@@ -200,9 +201,10 @@ color: #bcd6ff;
 
 .service {
   background-color: #e3e3e3;
-  height: 300px;
+  height: 380px;
   display:grid;
   align-items: center;
+  margin-top: 150px;
 }
 
 .serviceTitle {
@@ -218,11 +220,49 @@ color: #bcd6ff;
 }
 
 .serviceCard .card {
-  margin: 0 50px
-  
+  margin: 0 50px;
+  background-color: #cfcfcf; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.cardImg {
+  display: flex;
+  justify-content: center;
 }
 
 .card img {
-  width: 100px;
+  width:100px;
   height: auto;
+}
+.card-body {
+  text-align: center;
+}
+
+.card-group img {
+  width: auto;
+  height: 300px;
+}
+
+.cardItems{
+  display: flex;
+  justify-content: center;
+}
+
+.cardItems .card {
+  margin: 0 10px;
+}
+
+.cardItems img {
+  width: auto;
+}
+
+.project {
+  display: grid;
+  align-items: center;
+  height: 500px;
+  margin-top: 150px;
+}
+
+.project h2 {
+  text-align: center;
 }
