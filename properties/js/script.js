@@ -1,13 +1,13 @@
-const text = "Brian Zakariya";
-        let index = 0;
-        const speed = 150; // kecepatan mengetik dalam milidetik
+  // Ambil semua link navbar
+  const navLinks = document.querySelectorAll('.nav-link');
 
-        function typeEffect() {
-            if (index < text.length) {
-                document.getElementById("text").innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, speed);
-            }
-        }
-
-        typeEffect(); // Mulai efek mengetik saat halaman dimuat
+  // Tambahkan event listener untuk setiap link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Hapus kelas 'active' dari semua link
+      navLinks.forEach(nav => nav.classList.remove('active'));
+      
+      // Tambahkan kelas 'active' pada link yang diklik
+      link.classList.add('active');
+    });
+  });
