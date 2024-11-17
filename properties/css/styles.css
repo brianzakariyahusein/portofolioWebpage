@@ -1,6 +1,6 @@
 body {
-  height: 1000px;
   background-color: red;
+  height: 2000px;
   margin: 0;
   padding: 0;
   top: 0;
@@ -13,14 +13,13 @@ body {
   background-color: #ffffffcc;
   transition: padding 0.3s ease, background-color 0.3s ease;
 }
-.navbar-brand h5{
+.navbar-brand h5 {
   color: rgb(40, 46, 75);
   font-family: "Edu AU VIC WA NT Pre", cursive;
   font-weight: bold;
   position: relative;
   top: 12px;
   height: 18px;
-  
 }
 
 .navbar-nav a {
@@ -38,17 +37,17 @@ body {
   left: 50%;
   background-color: rgb(135, 135, 135);
   transition: all 0.3s ease;
-} 
+}
 .navbar-nav a:hover::after {
   width: 100%;
   padding: 1.2px;
   left: 0;
 }
 .nav-link:hover {
-  color: rgb(173, 173, 173)!important;
+  color: rgb(173, 173, 173) !important;
 }
 .nav-link.active {
-  color: rgb(173, 173, 173)  !important;
+  color: rgb(173, 173, 173) !important;
   /* background-color: red; */
 }
 
@@ -57,10 +56,11 @@ body {
   background-color: #cfcfcfb9;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   right: 0;
   left: 0;
+  z-index: -1;
 }
 #background-video {
   width: 100%;
@@ -70,7 +70,107 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: -1;
-  filter: brightness(50%);
+  z-index: -2;
+  /* filter: brightness(10%); */
+  filter: opacity(5%);
+}
+
+.homeWave {
+  /* border: 2px solid green; */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  /* filter: opacity(80%); */
+}
+
+.homeItems {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid green; */
+  height: 100vh;
+  width: auto;
+  margin: 0 50px;
+  align-items: center;
+}
+
+.homeText {
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.homeText h3 {
+  font-weight: bold;
+  color: #94afe3;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+}
+/* .typing-effect {
+  font-weight: bold;
+  color: #6d89bb;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+} */
+.conText {
+  /* border: 2px solid blue; */
+  color: #555555;
+  text-transform: uppercase;
+  display: flex;
+  font-weight: 500;
+  font-size: 14.5px;
+  /* margin: 0 0 0 50px; */
+}
+#flip {
+  height: 40px;
+  overflow: hidden;
+  margin-left: 10px;
+  color: #bcd6ff;
+}
+#flip > div > div {
+  color: #bcd6ff;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+#flip div:first-child {
+  animation: show 8s linear infinite;
+}
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+.homeImage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: right;
 }
 
