@@ -1,6 +1,4 @@
 body {
-  background-color: red;
-  height: 2000px;
   margin: 0;
   padding: 0;
   top: 0;
@@ -74,7 +72,10 @@ body {
   /* filter: brightness(10%); */
   filter: opacity(5%);
 }
-
+#home {
+  width: auto;
+  height: 100vh;
+}
 .homeWave {
   /* border: 2px solid green; */
   top: 0;
@@ -89,17 +90,18 @@ body {
 
 .homeItems {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   /* border: 2px solid green; */
-  height: 100vh;
-  width: auto;
-  margin: 0 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; 
   align-items: center;
+  height: 100vh;
 }
 
 .homeText {
-  /* border: 2px solid red; */
-  width: 100%;
+  width: 700px;
 }
 
 .homeText h3 {
@@ -108,14 +110,7 @@ body {
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
   font-size: 40px;
 }
-/* .typing-effect {
-  font-weight: bold;
-  color: #6d89bb;
-  font-family: Arial, sans-serif;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-} */
+
 .conText {
   /* border: 2px solid blue; */
   color: #555555;
@@ -168,9 +163,59 @@ body {
 }
 
 .homeImage {
-  width: 100%;
-  height: 100vh;
+  width: 350px;
+  height: auto;
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  margin: 0 20px 0 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.homeImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* aboutPage */
+#about {
+  position: relative;
+  top: 50px;
+  padding-top: 100px;
+}
+.about {
+  background-color: #f7f7f7;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.aboutImage {
+  width: 750px;
+  height: auto;
+  margin: 0 0 0 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aboutImage img {
+  width: 100%;
+  height: auto;
+  filter: brightness(140%);
+}
+.aboutText {
+  padding: 15px;
+  margin: 0 50px 0 50px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.bio {
+  display: flex;
+}
+.bio1 div,
+.bio2 div {
+  display: flex;
+  margin-right: 150px;
+}
+
+.bio b {
+  margin-right: 10px;
 }
 
