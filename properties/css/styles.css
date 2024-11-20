@@ -269,3 +269,61 @@ body {
   filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(80%);
   /* Ganti dengan warna lain sesuai kebutuhan */
 }
+
+/* Contact Styles */
+#contact {
+  background-color: #414656;
+  color: #fff;
+  margin-top: 150px;
+}
+.footerOne {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  height: 150px;
+}
+.footerLogo {
+  margin: 25px 50px 0 50px;
+}
+.footerBio {
+  margin: 0 50px;
+}
+.footerBio img {
+  width: 25px;
+  height: 100%;
+  margin-right: 15px;
+}
+.phone {
+  display: flex;
+}
+.email {
+  display: flex;
+}
+#contact hr {
+  width: 90%;
+  margin: 40px auto;
+}
+.footerTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerLink a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: underline;
+}
+.footerSocialMedia img {
+  margin: 0 10px;
+  width: 40px;
+}
+.footerSocialMedia {
+  margin: 0 50px;
+}
+.footerLogos {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-weight: bold;
+  margin: 25px 50px 0 50px;
+}
