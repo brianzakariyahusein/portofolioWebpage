@@ -1,5 +1,5 @@
 body {
-  height: 2500px;
+  /* height: 2500px; */
   margin: 0;
   padding: 0;
   top: 0;
@@ -73,37 +73,26 @@ body {
   /* filter: brightness(10%); */
   filter: opacity(5%);
 }
+
 #home {
   width: auto;
   height: 100vh;
 }
-.homeWave {
-  /* border: 2px solid green; */
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  /* filter: opacity(80%); */
-}
 
 .homeItems {
   display: flex;
-  justify-content: center;
-  /* border: 2px solid green; */
+  justify-content: space-around;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 .homeText {
-  width: 700px;
-  /* border: 2px solid red; */
+  margin: 0;
 }
 .homeButton {
   margin-top: 20px;
@@ -116,14 +105,18 @@ body {
   font-size: 40px;
 }
 
-.conText {
+.conText br {
+  display: none;
+}
+
+.conText > div {
   /* border: 2px solid blue; */
   color: #555555;
   text-transform: uppercase;
   display: flex;
   font-weight: 500;
   font-size: 14.5px;
-  /* margin: 0 0 0 50px; */
+  margin: 0 0 0 50px;
 }
 #flip {
   height: 40px;
@@ -180,6 +173,12 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 95px 50px 90px 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .homeItems {
+    display: grid;
+  }
 }
 
 /* aboutPage */
@@ -270,6 +269,12 @@ body {
   /* Ganti dengan warna lain sesuai kebutuhan */
 }
 
+@media only screen and (max-width: 768px) {
+  .cardItems {
+    display: grid;
+  }
+}
+
 /* Contact Styles */
 #contact {
   background-color: #414656;
@@ -326,4 +331,161 @@ body {
   font-family: "Edu AU VIC WA NT Pre", cursive;
   font-weight: bold;
   margin: 25px 50px 0 50px;
+}
+
+/* Media Queary */
+
+/* Large Devices / Desktop (≥1200px) */ 
+@media only screen and (min-width: 1441px) {
+  .navbar .container {
+    padding: 20px;
+  }
+  .navbar-nav a {
+    font-size: 20px;
+  }
+  .navbar h5 {
+    font-size: 30px;
+  }
+  .homeText h3 {
+    font-size: 60px;
+  }
+  .conText > div {
+    font-size: 16px;
+  }
+  .homeButton a {
+    border: 2px solid;
+    padding: 10px 35px;
+    font-size: 25px;
+  }
+  .homeImage {
+    width: 400px;
+  }
+}
+
+/* Medium Devices / Tablets (≥768px and <1200px) */
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  /* Home Page */
+  .homeItems {
+    padding-top: 80px;
+  }
+  .homeText {
+    margin-left: 50px;
+    width: 700px;
+  }
+  .homeText h3 {
+    margin-bottom: 25px;
+  }
+  .conText br {
+    display: block;
+  }
+  .conText > div {
+    display: grid;
+  }
+
+  #flip {
+    margin: 0;
+    position: relative;
+    bottom: 37px;
+    left: 95px;
+  }
+  .homeButton {
+    position: relative;
+    bottom: 50px;
+  }
+  .homeImage {
+    width: 350px;
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+
+/* Small Devices / Mobile (≥480px and <768px) */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  #home {
+    height: 1000px;
+  }
+  .homeItems {
+    display: grid;
+    align-items: center;
+  }
+  .homeText h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .homeText {
+    padding-top: 90px;
+  }
+  .conText > div > p{
+    width: 100%;
+  }
+  .conText br {
+    /* display: block; */
+  }
+  .conText > div {
+    font-size: 10px;
+    margin: 0;
+    display: grid;
+    /* justify-content: center; */
+  }
+  #flip {
+    margin: 0;
+    position: relative;
+    /* bottom: 15px; */
+    text-align: center;
+  }
+  .homeButton {
+    display: flex;
+    justify-content: center;
+  }
+  .homeImage {
+    width: 200px;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* Extra Small Devices / Mobile (<480px) */
+@media only screen and (max-width: 479px) {
+  #home {
+    height: 1000px;
+  }
+  .homeItems {
+    display: grid;
+    align-items: center;
+  }
+  .homeText h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .homeText {
+    padding-top: 90px;
+  }
+  .conText > div > p{
+    width: 100%;
+  }
+  .conText br {
+    /* display: block; */
+  }
+  .conText > div {
+    font-size: 10px;
+    margin: 0;
+    display: grid;
+    /* justify-content: center; */
+  }
+  #flip {
+    margin: 0;
+    position: relative;
+    /* bottom: 15px; */
+    text-align: center;
+  }
+  .homeButton {
+    display: flex;
+    justify-content: center;
+  }
+  .homeImage {
+    width: 200px;
+    left: 0;
+    right: 0;
+  }
 }
