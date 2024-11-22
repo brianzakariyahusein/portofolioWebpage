@@ -419,9 +419,6 @@ body {
   .conText > div > p{
     width: 100%;
   }
-  .conText br {
-    /* display: block; */
-  }
   .conText > div {
     font-size: 10px;
     margin: 0;
@@ -463,9 +460,6 @@ body {
   }
   .conText > div > p{
     width: 100%;
-  }
-  .conText br {
-    /* display: block; */
   }
   .conText > div {
     font-size: 10px;
